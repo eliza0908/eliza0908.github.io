@@ -4,13 +4,16 @@ on:
   push:
     branches: ["main"]
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
+      - name: Checkout
+        uses: actions/checkout@v3   # 改成v3，去掉 submodules
+        # 注意：不写 submodules: true，因为主题是直接上传的
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
