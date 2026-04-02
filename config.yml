@@ -17,6 +17,14 @@ outputs:
   home:
     - HTML
     - JSON
+  page:
+    - HTML
+  section:
+    - HTML
+  taxonomy:
+    - HTML
+  term:
+    - HTML
 
 params:
   defaultTheme: auto
