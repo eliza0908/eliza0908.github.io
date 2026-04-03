@@ -33,46 +33,54 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowShareButtons: false
-
-  profileMode:
-    enabled: true
-    title: "Eliza Chen"
-    subtitle: "MA Sociology @ Minzu University of China. Fieldwork, ethnic minorities & rural China. Also: books, films, photography & slow living."
-    imageUrl: ""
-    imageTitle: "Eliza Chen"
-    buttons:
-      - name: Research
-        url: /tags/research/
-      - name: Reading
-        url: /tags/reading/
-      - name: About
-        url: /about/
-
+  
+  homeInfoParams:
+    Title: "Eliza 陈仪真"
+    Content: |
+      **MA in Sociology @ Minzu University of China** | Organizational & Digital Sociologist
+      
+      I'm a sociologist exploring how digital technologies reshape social organization and relationships. Currently pursuing my Master's degree, I conduct fieldwork examining emerging organizational forms—particularly how decentralized systems transform trust-building, skill-sharing, and community formation in rural contexts.
+      
+      My research interests lie at the intersection of **organizational sociology** and **technology sociology**, with a specific focus on understanding how technologies, organizations, and social relationships co-evolve and mutually shape each other.
+  
   socialIcons:
     - name: github
       url: "https://github.com/eliza0908"
     - name: email
       url: "mailto:819407190@qq.com"
 
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
+    location: 0
+    distance: 1000
     threshold: 0.4
-    keys: ["title", "permalink", "summary", "content"]
+    minMatchCharLength: 0
+    limit: 10
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
 
 menu:
   main:
     - name: Research
-      url: /tags/research/
+      url: /research/
       weight: 1
     - name: Reading
-      url: /tags/reading/
+      url: /reading/
       weight: 2
     - name: Films
-      url: /tags/film/
+      url: /films/
       weight: 3
     - name: Life
-      url: /tags/life/
+      url: /life/
       weight: 4
     - name: Archive
       url: /archives/
