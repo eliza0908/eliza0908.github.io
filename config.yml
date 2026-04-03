@@ -4,6 +4,28 @@ paginate: 10
 theme: hugo-PaperMod
 languageCode: en-us
 
+author:
+  name: "Eliza Chen"
+  email: "819407190@qq.com"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home:
+    - HTML
+    - JSON
+  page:
+    - HTML
+  section:
+    - HTML
+  taxonomy:
+    - HTML
+  term:
+    - HTML
+
 params:
   defaultTheme: auto
   ShowReadingTime: true
@@ -11,16 +33,12 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowShareButtons: false
-  ShowToc: true
 
   profileMode:
     enabled: true
     title: "Eliza Chen"
-    subtitle: |
-      MA Sociology @ Minzu University of China.
-      Fieldwork, ethnic minorities & rural China.
-      Also: books, films, photography & slow living.
-    imageUrl: "你的头像图片链接"
+    subtitle: "MA Sociology @ Minzu University of China. Fieldwork, ethnic minorities & rural China. Also: books, films, photography & slow living."
+    imageUrl: ""
     imageTitle: "Eliza Chen"
     buttons:
       - name: Research
@@ -35,11 +53,6 @@ params:
       url: "https://github.com/eliza0908"
     - name: email
       url: "mailto:819407190@qq.com"
-
-  cover:
-    hidden: false
-    hiddenInList: false
-    hiddenInSingle: false
 
   fuseOpts:
     isCaseSensitive: false
@@ -70,9 +83,3 @@ menu:
     - name: Search
       url: /search/
       weight: 7
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
