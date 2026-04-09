@@ -4,7 +4,6 @@ date: 2026-04-09
 draft: false
 ---
 
-> 📥 **[点击这里下载我的完整 PDF 版简历 (Download CV in PDF) ](你的PDF简历文件名.pdf)**
 
 ## 🎓 教育背景 (Education)
 
