@@ -34,15 +34,6 @@ params:
   ShowCodeCopyButtons: true
   ShowShareButtons: false
   
-  homeInfoParams:
-    Title: "Eliza 陈仪真"
-    Content: |
-      **MA in Sociology @ Minzu University of China** | Organizational & Digital Sociologist
-      
-      I'm a sociologist exploring how digital technologies reshape social organization and relationships. Currently pursuing my Master's degree, I conduct fieldwork examining emerging organizational forms—particularly how decentralized systems transform trust-building, skill-sharing, and community formation in rural contexts.
-      
-      My research interests lie at the intersection of **organizational sociology** and **technology sociology**, with a specific focus on understanding how technologies, organizations, and social relationships co-evolve and mutually shape each other.
- 
   mainSections:
     - blog
   
