@@ -1,13 +1,13 @@
 ---
-title: "《鬼才之道》影评"
+title: "《女孩》影评"
 date: 2026-04-13
 draft: false
 tags: ["电影", "影评", "豆瓣"]
 categories: ["films"]
-description: "《鬼才之道》豆瓣影评"
+description: "《女孩》豆瓣影评"
 ---
 
-## 《鬼才之道》
+## 《女孩》
 
 **评分**: ⭐⭐⭐ (3/5)
 
