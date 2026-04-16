@@ -44,8 +44,8 @@ params:
       url: "mailto:819407190@qq.com"
 
   cover:
-    hidden: true
-    hiddenInList: true
+    hidden: false
+    hiddenInList: false
     hiddenInSingle: true
 
   fuseOpts:
