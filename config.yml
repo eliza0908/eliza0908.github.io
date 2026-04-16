@@ -33,6 +33,8 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowShareButtons: false
+  ShowToc: true 
+  TocOpen: true   
   
   mainSections:
     - blog
@@ -76,11 +78,11 @@ menu:
     - name: Life
       url: /life/
       weight: 4
-    - name: Archive
-      url: /archives/
-      weight: 5
     - name: About
       url: /about/
+      weight: 5
+    - name: Tags
+      url: /tags/
       weight: 6
     - name: Search
       url: /search/

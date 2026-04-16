@@ -15,3 +15,16 @@ iframe {
 .entry-cover img {
     border: 1px solid var(--border);
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    
+    background-image: url("https://github.com/user-attachments/assets/1d6a1e06-7d98-48e4-8a10-034206ba0a3b");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; 
+    z-index: -1;   
+    pointer-events: none;
+}
