@@ -3,11 +3,11 @@ title: "《女孩》影评"
 description: "《女孩》豆瓣影评 - 舒淇首部自编自导电影"
 date: 2026-04-13T10:00:00+08:00
 draft: false
-tags: ["电影", "舒淇", "女孩", "影评"]
+tags:["电影", "舒淇", "女孩", "影评"]
 cover:
-    image: "https://github.com/user-attachments/assets/f298b83c-f879-44ac-b6f4-167d9537bc2d"   # 👈 替换为你的真实图片链接
-    alt: "《女孩》电影海报"
-    hiddenInSingle: true                     # 👈 魔法开关：设置为 true
+  image: "https://github.com/user-attachments/assets/f298b83c-f879-44ac-b6f4-167d9537bc2d"
+  alt: "《女孩》电影海报"
+  hiddenInSingle: true                 
 ---
 
 ## 🎬 影片信息 (Metadata)
