@@ -7,7 +7,7 @@ tags:["电影", "舒淇", "女孩", "影评"]
 cover:
   image: "https://github.com/user-attachments/assets/f298b83c-f879-44ac-b6f4-167d9537bc2d"
   alt: "《女孩》电影海报"
-  hiddenInSingle: true                 
+  hiddenInSingle: true              
 ---
 
 ## 🎬 影片信息 (Metadata)
