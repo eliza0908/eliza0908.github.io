@@ -24,7 +24,7 @@ body::before {
     background-image: url("https://github.com/user-attachments/assets/1d6a1e06-7d98-48e4-8a10-034206ba0a3b");
     background-size: cover;
     background-position: center;
-    opacity: 0.04; 
+    opacity: 0.2; 
     z-index: -1;   
     pointer-events: none;
 }
