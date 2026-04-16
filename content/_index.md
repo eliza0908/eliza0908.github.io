@@ -52,3 +52,14 @@ My research interests lie at the intersection of **organizational sociology** an
 <p style="text-align: center; font-size: 13.5px; color: #888; margin-top: 8px;">柳州野攀</p>
 </div>
 </div>
+
+<style>
+/* 照片悬停放大特效 */
+div[style*="flex: 1 1 280px"] img {
+    transition: all 0.3s ease-in-out !important;
+}
+div[style*="flex: 1 1 280px"] img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+</style>
