@@ -2,7 +2,9 @@ baseURL: "https://eliza-notes.com/"
 title: "Eliza's Notes"
 paginate: 10
 theme: hugo-PaperMod
-languageCode: en-us
+locale: zh-CN
+defaultContentLanguage: zh
+defaultContentLanguageInSubdir: false
 
 author:
   name: "Eliza Chen"
@@ -35,6 +37,7 @@ params:
   ShowShareButtons: false
   ShowToc: true 
   TocOpen: true   
+  displayFullLangName: true
   
   mainSections:
     - blog
@@ -64,26 +67,62 @@ params:
       - summary
       - content
 
-menu:
-  main:
-    - name: Research
-      url: /research/
-      weight: 1
-    - name: Reading
-      url: /reading/
-      weight: 2
-    - name: Films
-      url: /films/
-      weight: 3
-    - name: Life
-      url: /life/
-      weight: 4
-    - name: About
-      url: /about/
-      weight: 5
-    - name: Tags
-      url: /tags/
-      weight: 6
-    - name: Search
-      url: /search/
-      weight: 7
+languages:
+  zh:
+    label: "中文"
+    locale: "zh-CN"
+    weight: 1
+    params:
+      languageAltTitle: "切换至中文"
+    menu:
+      main:
+        - name: 研究
+          url: /research/
+          weight: 1
+        - name: 阅读
+          url: /reading/
+          weight: 2
+        - name: 电影
+          url: /films/
+          weight: 3
+        - name: 生活
+          url: /life/
+          weight: 4
+        - name: 关于
+          url: /about/
+          weight: 5
+        - name: 标签
+          url: /tags/
+          weight: 6
+        - name: 搜索
+          url: /search/
+          weight: 7
+  en:
+    label: "English"
+    locale: "en-US"
+    weight: 2
+    params:
+      languageAltTitle: "Switch to English"
+    menu:
+      main:
+        - name: Research
+          url: /research/
+          weight: 1
+        - name: Reading
+          url: /reading/
+          weight: 2
+        - name: Films
+          url: /films/
+          weight: 3
+        - name: Life
+          url: /life/
+          weight: 4
+        - name: About
+          url: /about/
+          weight: 5
+        - name: Tags
+          url: /tags/
+          weight: 6
+        - name: Search
+          url: /search/
+          weight: 7
