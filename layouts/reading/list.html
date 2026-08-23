@@ -1,0 +1,52 @@
+{{- define "main" }}
+
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description | markdownify }}</div>
+  {{- end }}
+</header>
+
+<div class="book-wall">
+  {{- range .Pages.ByDate.Reverse }}
+  {{- $image := "" }}
+  {{- with .Params.cover }}{{ $image = .image }}{{ end }}
+  {{- if not $image }}
+    {{- with findRE `!\[[^\]]*\]\([^)]+\)` .RawContent 1 }}
+      {{- $image = replaceRE `!\[[^\]]*\]\(([^ )]+).*` "$1" (index . 0) }}
+    {{- end }}
+  {{- end }}
+
+  {{- $rating := 0 }}
+  {{- with .Params.rating }}
+    {{- $rating = int . }}
+  {{- else with findRE "[0-9]/5" .RawContent 1 }}
+    {{- $rating = int (substr (index . 0) 0 1) }}
+  {{- end }}
+
+  <a class="book-card" href="{{ .Permalink }}">
+    <div class="book-cover">
+      {{- if $image }}
+      <img src="{{ $image }}" alt="{{ .Title | plainify }} 的封面" loading="lazy"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      {{- end }}
+      <div class="book-cover-fallback"{{ if $image }} style="display:none"{{ end }}>
+        <span>{{ .Title | plainify }}</span>
+      </div>
+      {{- if gt $rating 0 }}
+      <span class="book-rating" aria-label="{{ $rating }}/5">
+        {{- range seq 5 }}{{ if le . $rating }}★{{ else }}☆{{ end }}{{ end -}}
+      </span>
+      {{- end }}
+    </div>
+    <div class="book-caption">
+      <h3>{{ .Title | plainify }}</h3>
+      {{- with .Params.book_author }}<p>{{ . }}</p>{{ end }}
+      <time>{{ .Date.Format "2006-01" }}</time>
+    </div>
+  </a>
+  {{- end }}
+</div>
+
+{{- end }}
